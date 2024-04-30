@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "8969c6ac-8f6d-4ce8-aaba-1825f7877351",
+		"name": "PYLON EMPLOYEE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16471182"
+	},
+	"item": [
+		{
+			"name": "Get Employee Detail",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "myuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8001/api/v1/employees/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "myuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8001/api/v1/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Employee CSV",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "myuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8001/api/v1/employees/csv",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"csv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Download Employee CSV",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/v1/employees/csv",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"csv"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/csv; charset=UTF-8"
+						},
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=employees.csv"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Apr 2024 14:45:22 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "id,nric4Digit,name,manpowerId,designation,project,team,supervisor,joinDate,resignDate,created_at,updated_at\n1,1111,Sam TOni In the land,oditos,Software Engineer,New Project,Development Team,John Doe,2024-04-30,2025-04-30,2024-04-29T04:14:58.000000Z,2024-04-29T04:40:42.000000Z\n2,7286,Mr. Timmy Will,est,Claims Adjuster,Velit quia amet possimus labore.,ipsam,Delia Graham,1996-07-02,1985-06-14,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n3,4601,Dr. Barney Ryan,amet,Music Arranger and Orchestrator,Facere sed vero debitis praesentium doloremque ad.,fugit,Mr. Rocky Roberts Sr.,2015-12-08,,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n4,3613,Chance Pacocha,porro,Business Teacher,Incidunt nisi quaerat quas id et sit.,animi,Althea Kshlerin,2004-11-22,,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n5,0705,Dr. Nola Muller Sr.,libero,Nutritionist,Rem cum dignissimos cumque dolorem sit adipisci.,asperiores,Prof. Connor Rohan I,2006-08-09,1977-08-20,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n6,1290,Joseph King DDS,et,Manufacturing Sales Representative,Atque perferendis rerum quas expedita vitae quidem.,facilis,Janis Hoppe,1992-08-18,,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n7,7232,Leann Steuber,quis,Probation Officers and Correctional Treatment Specialist,Nihil corporis qui sit voluptas quis.,labore,Citlalli Botsford,1995-02-22,,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n8,5290,Chanelle Wilderman Sr.,aliquam,Gaming Surveillance Officer,Quam et impedit quaerat dolore nemo aut.,cupiditate,Kendall Cole,2011-01-21,2013-01-03,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n9,8912,Mrs. Annabell Trantow IV,blanditiis,Bindery Machine Operator,Assumenda atque voluptate sunt.,consequatur,Kaya Bosco,1973-06-28,1988-11-23,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n10,9106,Brody Davis,deleniti,Agricultural Sciences Teacher,Ipsum et ratione ipsa iure tempora dolore exercitationem.,minima,Dr. Jermaine Dickinson,2022-10-25,,2024-04-29T04:14:58.000000Z,2024-04-29T04:14:58.000000Z\n"
+				}
+			]
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "myuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"nric4Digit\": \"1111\",\n    \"name\": \"Sam TOni In the land\",\n    \"manpowerId\": \"oditos\",\n    \"designation\": \"Software Engineer\",\n    \"project\": \"New Project\",\n    \"team\": \"Development Team\",\n    \"supervisor\": \"John Doe\",\n    \"joinDate\": \"2024-04-30\",\n    \"resignDate\": \"2025-04-30\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/api/v1/employees/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
