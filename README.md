@@ -21,3 +21,12 @@ This project provides a simple Laravel API to test employee-related functionalit
 
    ```bash
    git clone https://<your-repository-url>
+
+3. **Install Dependencies:**
+   Navigate to the project directory and run the following command to install all required dependencies::
+
+   ```bash
+   composer install
+
+4. **Configure Environment:**
+   Copy the .env.example file to .env and change the db setting:
