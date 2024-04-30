@@ -38,11 +38,11 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8001/api/v1/employees/:id",
+					"raw": "localhost:8000/api/v1/employees/:id",
 					"host": [
 						"localhost"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -91,11 +91,11 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8001/api/v1/employees",
+					"raw": "localhost:8000/api/v1/employees",
 					"host": [
 						"localhost"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -137,11 +137,11 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8001/api/v1/employees/csv",
+					"raw": "localhost:8000/api/v1/employees/csv",
 					"host": [
 						"localhost"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -168,11 +168,11 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8001/api/v1/employees/csv",
+							"raw": "localhost:8000/api/v1/employees/csv",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8000",
 							"path": [
 								"api",
 								"v1",
@@ -187,7 +187,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "localhost:8001"
+							"value": "localhost:8000"
 						},
 						{
 							"key": "Connection",
@@ -264,11 +264,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8001/api/v1/employees/:id",
+					"raw": "localhost:8000/api/v1/employees/:id",
 					"host": [
 						"localhost"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
