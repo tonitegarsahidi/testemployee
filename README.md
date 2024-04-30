@@ -28,6 +28,12 @@ This project provides a simple Laravel API to test employee-related functionalit
    ```bash
    composer install
 
+3. **Laravel Setup:**
+   run key generate setup for fresh installation laravel:
+
+   ```bash
+   php artisan key:generate
+
 4. **Configure Environment:**
    Copy the .env.example file to .env and change the db setting:
 
@@ -46,4 +52,7 @@ This project provides a simple Laravel API to test employee-related functionalit
    php artisan serve
 
 6. **Enjoy Explore:**
-   if you can browse http://YOURHOST:8000 Then the API is live at that url
+   if you can browse http://YOURHOST:8000 Then the API is live at that url. 
+   Use following for basicauth credential 
+   username : myuser
+   password : mypassword
