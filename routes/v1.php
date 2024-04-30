@@ -8,8 +8,9 @@ use App\Http\Middleware\TestPylonBasicAuth;
 Route::middleware(TestPylonBasicAuth::class)->group(function () {
     // Define your routes here
 
-    Route::get('/employee', [EmployeeControllerApi::class, 'getEmployee']);//->middleware('auth:sanctum');
-    Route::put('/employee', [EmployeeControllerApi::class, 'updateEmployee']);//->middleware('auth:sanctum');
-    Route::put('/employee', [EmployeeControllerApi::class, 'downloadAllEmployee']);//->middleware('auth:sanctum');
+    Route::get('/employees/csv', [EmployeeControllerApi::class, 'downloadEmployee']);
+    Route::get('/employees', [EmployeeControllerApi::class, 'listEmployee']);
+    Route::get('/employees/{id}', [EmployeeControllerApi::class, 'getEmployee']);
+    Route::patch('/employees/{id}', [EmployeeControllerApi::class, 'updateEmployee']);
 
 });
