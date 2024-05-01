@@ -1,6 +1,7 @@
 # testemployee: Laravel API Test
 
-This project provides a simple Laravel API to test employee-related functionalities.
+This project provides a simple Laravel API to test employee-related functionalities. 
+Test sample server http://128.199.72.174/api/v1/employees
 
 ## Installation
 
