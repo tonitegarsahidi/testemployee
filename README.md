@@ -10,6 +10,7 @@ This project provides a simple Laravel API to test employee-related functionalit
 * php8.2-xml
 * php8.2-dom
 * php8.2-curl (ensure these extensions are installed)
+* PHP MS SQL driver, for Linux or Mac check https://learn.microsoft.com/en-us/sql/connect/php/installation-tutorial-linux-mac?view=sql-server-ver16
 
 **Steps:**
 

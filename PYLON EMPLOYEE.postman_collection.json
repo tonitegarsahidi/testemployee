@@ -38,7 +38,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/v1/employees/:id",
+					"raw": "128.199.72.174/api/v1/employees/:id",
 					"host": [
 						"localhost"
 					],
@@ -91,7 +91,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/v1/employees",
+					"raw": "128.199.72.174/api/v1/employees",
 					"host": [
 						"localhost"
 					],
@@ -137,7 +137,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/v1/employees/csv",
+					"raw": "128.199.72.174/api/v1/employees/csv",
 					"host": [
 						"localhost"
 					],
@@ -168,7 +168,7 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8000/api/v1/employees/csv",
+							"raw": "128.199.72.174/api/v1/employees/csv",
 							"host": [
 								"localhost"
 							],
@@ -187,7 +187,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "localhost:8000"
+							"value": "128.199.72.174"
 						},
 						{
 							"key": "Connection",
@@ -264,7 +264,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/api/v1/employees/:id",
+					"raw": "128.199.72.174/api/v1/employees/:id",
 					"host": [
 						"localhost"
 					],

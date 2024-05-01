@@ -9,7 +9,7 @@ class Employee extends Model
 {
     use HasFactory;
 
-    protected $table = 'SampleManpowerList';
+    protected $table = 'test.SampleManpowerList';
 
     protected $fillable = [
         'nric4Digit',
